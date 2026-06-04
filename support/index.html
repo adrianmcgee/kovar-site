@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Kovar</title>
+  <style>
+    :root {
+      --bg: #FFFDF7;
+      --surface: #FAF4E8;
+      --text: #454334;
+      --mute: #8C8772;
+      --brand: #5E9C6B;
+      --brand-ink: #3F7A4D;
+      --accent: #C76A3C;
+      --border: rgba(90,80,55,0.16);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 1rem 4rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .logo { font-family: "Quicksand", sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--brand-ink); margin-bottom: 0.5rem; }
+    h1 { font-family: "Quicksand", sans-serif; font-size: 2rem; font-weight: 700; line-height: 1.2; }
+    .meta { color: var(--mute); font-size: 0.9rem; margin-top: 0.5rem; }
+    h2 {
+      font-family: "Quicksand", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--text);
+    }
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 1em;
+      background: var(--brand);
+      margin-right: 0.6rem;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+    p { margin-bottom: 0.9rem; }
+    a { color: var(--brand-ink); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .contact-box h3 { font-family: "Quicksand", sans-serif; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .contact-box p { color: var(--mute); margin-bottom: 1rem; }
+    .contact-email {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-email:hover { opacity: 0.9; text-decoration: none; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .faq-item h3 { font-family: "Quicksand", sans-serif; font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin-bottom: 0; }
+    nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); display: flex; gap: 1.5rem; justify-content: center; }
+    footer { text-align: center; margin-top: 3rem; color: var(--mute); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Kovar</div>
+      <h1>Support</h1>
+      <p class="meta">Get help with the Kovar app</p>
+    </header>
+
+    <div class="contact-box">
+      <h3>Contact Us</h3>
+      <p>We typically respond within 24–48 hours</p>
+      <a href="mailto:adrianpmcgee@gmail.com" class="contact-email">adrianpmcgee@gmail.com</a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Where is my child's data stored?</h3>
+      <p>On your device, and — if you're signed in to iCloud — in your own private iCloud account via Apple's CloudKit. We never see or store it. See our <a href="/kovar-site/privacy/">Privacy Policy</a> for details.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I switch between Grown-up Mode and Kid Mode?</h3>
+      <p>Kid Mode is one tap away for your child. Returning to Grown-up Mode is gated by Face ID or your device passcode, so health records and private photos stay protected.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>My entries aren't syncing between devices.</h3>
+      <p>Make sure both devices are signed in to the same Apple ID and have iCloud Drive enabled in Settings. Sync runs over your iCloud account, so a stable connection helps. If it persists, toggle iCloud off and on for Kovar, then reopen the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I turn condition modules on or off?</h3>
+      <p>Modules (flush/stoma, bladder, diet, mood, school, and more) are per child. Set them during onboarding or later in Settings → Edit profile, so the app only shows what your family needs.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I prepare a report for clinic?</h3>
+      <p>Use the weekly report for a quick shareable record, or the Appointments tab's "Prepare for clinic" to generate a combined PDF you can print or share.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I delete my data?</h3>
+      <p>Delete any entry or photo in the app, or remove everything via Settings → your name → iCloud → Manage Storage → Kovar, or by deleting the app. Because we hold none of your data, there's nothing to request from us.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is Kovar medical advice?</h3>
+      <p>No. Kovar only records and shares information you enter from your own care team. It never diagnoses or suggests medicines or doses. Always follow your clinician's guidance.</p>
+    </div>
+
+    <nav>
+      <a href="/kovar-site/">Home</a>
+      <a href="/kovar-site/privacy/">Privacy Policy</a>
+    </nav>
+
+    <footer>© 2026 Kovar</footer>
+  </div>
+</body>
+</html>
